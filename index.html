@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Thèse</title>
+<meta name="description" content="Rédaction de thèse : séances chronométrées, pages, date de fin estimée et bilan pour le directeur.">
+<meta name="theme-color" content="#1F2F6B">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+<script src="core.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <p class="brand">Thèse</p>
+    <nav aria-label="Navigation principale">
+      <a href="#aujourdhui" data-tab="aujourdhui">Aujourd'hui</a>
+      <a href="#plan" data-tab="plan">Plan</a>
+      <a href="#seances" data-tab="seances">Séances</a>
+      <a href="#bilan" data-tab="bilan">Bilan</a>
+      <a href="#reglages" data-tab="reglages">Réglages</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <h1 id="title" tabindex="-1"></h1>
+  <div id="view"></div>
+</main>
+<dialog id="sheet" class="sheet" aria-labelledby="sheet-title"></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript>Cette application a besoin de JavaScript.</noscript>
+</body>
+</html>
